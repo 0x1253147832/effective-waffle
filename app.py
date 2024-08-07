@@ -6,6 +6,8 @@ app = Quart(
     template_folder='src/templates',
     )
 
+app.config["DEBUG"] = True
+
 @app.route('/')
 async def home():
     
